@@ -27,7 +27,7 @@ jobs:
 
       - name: pnpm run install and test
         run: |
-          pnpn run init
+          pnpm run init
           pnpm run test
         env:
           CI: true
