@@ -61,3 +61,25 @@ module.exports = {
   先写测试 case，再补充业务
 - BDD（Behavior Driven Development）
   先写业务，再补充测试 case
+
+
+### Mock Logger
+
+- 设置 `jest-setup.ts`
+
+  ```js
+  // tests/jest-setup.ts
+  jest.spyOn(console, 'log').mockReturnValue();
+  jest.spyOn(console, 'info').mockReturnValue();
+  jest.spyOn(console, 'warn').mockReturnValue();
+  jest.spyOn(console, 'error').mockReturnValue();
+  ```
+
+- 引用 [jest-mock-console](https://github.com/bpedersen/jest-mock-console)
+
+  ```js
+  // tests/jest-setup.ts
+  import mockConsole from "jest-mock-console";
+
+  mockConsole()
+  ```
