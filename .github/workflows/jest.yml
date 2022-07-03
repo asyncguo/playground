@@ -29,8 +29,11 @@ jobs:
         run: |
           pnpm run init
           pnpm run test
+        env:
+          CI: true
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:
+          path-to-lcov: ./packages/jest/coverage/lcov.info
           github-token: ${{ secrets.GITHUB_TOKEN }}
