@@ -1,4 +1,4 @@
-node: Jest CI
+name: Jest CI
 
 on: 
   push:
