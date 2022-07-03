@@ -33,6 +33,6 @@ jobs:
           CI: true
 
       - name: Coveralls
-        uses: Coverallsapp/github-action@master
+        uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
