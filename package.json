@@ -24,5 +24,6 @@
     "@babel/template": "^7.16.7",
     "@babel/traverse": "^7.18.5",
     "@babel/types": "^7.18.4"
-  }
+  },
+  "packageManager": "pnpm@6.24.4"
 }
